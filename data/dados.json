@@ -1,0 +1,490 @@
+{
+    "categorias": [
+        {
+            "id": 1,
+            "nome": "Cabelo",
+            "imagem": "https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=300&q=80"
+        },
+        {
+            "id": 2,
+            "nome": "Unhas",
+            "imagem": "https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=300&q=80"
+        },
+        {
+            "id": 3,
+            "nome": "Sobrancelhas",
+            "imagem": "https://images.unsplash.com/photo-1583001931096-959e9a1a6223?auto=format&fit=crop&w=300&q=80"
+        },
+        {
+            "id": 4,
+            "nome": "Estética",
+            "imagem": "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=300&q=80"
+        },
+        {
+            "id": 5,
+            "nome": "Barbearia",
+            "imagem": "https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=300&q=80"
+        },
+        {
+            "id": 6,
+            "nome": "Massagem",
+            "imagem": "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=300&q=80"
+        }
+    ],
+
+    "estabelecimentos": [
+
+        {
+            "id": 1,
+            "nome": "Studio Bella",
+            "tipo": "Salão de beleza",
+            "nota": 4.9,
+            "avaliacoes": 328,
+            "distancia": "1,2 km",
+            "bairro": "Centro",
+            "endereco": "Rua Principal, 120 - Centro, Japeri - RJ",
+            "precoMinimo": 35,
+            "destaque": true,
+
+            "imagem": "https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=900&q=85",
+
+            "categorias": [
+                "Cabelo",
+                "Sobrancelhas",
+                "Unhas"
+            ],
+
+            "servicos": [
+                1,
+                2,
+                3,
+                4
+            ],
+
+            "profissionais": [
+                1,
+                2
+            ],
+
+            "horarios": [
+                "09:00",
+                "10:00",
+                "11:00",
+                "13:00",
+                "14:00",
+                "15:00",
+                "16:00",
+                "17:00",
+                "18:00"
+            ]
+        },
+
+
+        {
+            "id": 2,
+            "nome": "Essenza Estética",
+            "tipo": "Clínica de estética",
+            "nota": 4.8,
+            "avaliacoes": 215,
+            "distancia": "2,4 km",
+            "bairro": "Engenheiro Pedreira",
+            "endereco": "Av. Brasil, 450 - Engenheiro Pedreira, Japeri - RJ",
+            "precoMinimo": 80,
+            "destaque": true,
+
+            "imagem": "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=900&q=85",
+
+            "categorias": [
+                "Estética",
+                "Massagem"
+            ],
+
+            "servicos": [
+                5,
+                6,
+                7
+            ],
+
+            "profissionais": [
+                3,
+                4
+            ],
+
+            "horarios": [
+                "08:00",
+                "09:00",
+                "10:00",
+                "11:00",
+                "13:00",
+                "14:00",
+                "15:00",
+                "16:00"
+            ]
+        },
+
+
+        {
+            "id": 3,
+            "nome": "Urban Barber",
+            "tipo": "Barbearia",
+            "nota": 4.9,
+            "avaliacoes": 492,
+            "distancia": "1,8 km",
+            "bairro": "Centro",
+            "endereco": "Rua das Flores, 87 - Centro, Japeri - RJ",
+            "precoMinimo": 30,
+            "destaque": false,
+
+            "imagem": "https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=900&q=85",
+
+            "categorias": [
+                "Barbearia"
+            ],
+
+            "servicos": [
+                8,
+                9,
+                10
+            ],
+
+            "profissionais": [
+                5,
+                6
+            ],
+
+            "horarios": [
+                "09:00",
+                "10:00",
+                "11:00",
+                "12:00",
+                "14:00",
+                "15:00",
+                "16:00",
+                "17:00",
+                "18:00",
+                "19:00"
+            ]
+        },
+
+
+        {
+            "id": 4,
+            "nome": "Nail House",
+            "tipo": "Nail designer",
+            "nota": 4.7,
+            "avaliacoes": 183,
+            "distancia": "3,1 km",
+            "bairro": "Nova Belém",
+            "endereco": "Rua das Acácias, 220 - Nova Belém, Japeri - RJ",
+            "precoMinimo": 45,
+            "destaque": false,
+
+            "imagem": "https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=900&q=85",
+
+            "categorias": [
+                "Unhas"
+            ],
+
+            "servicos": [
+                11,
+                12,
+                13
+            ],
+
+            "profissionais": [
+                7
+            ],
+
+            "horarios": [
+                "09:00",
+                "10:30",
+                "12:00",
+                "14:00",
+                "15:30",
+                "17:00"
+            ]
+        },
+
+
+        {
+            "id": 5,
+            "nome": "Lumière Beauty",
+            "tipo": "Studio de beleza",
+            "nota": 4.9,
+            "avaliacoes": 267,
+            "distancia": "4,0 km",
+            "bairro": "Parque Guandu",
+            "endereco": "Rua Central, 315 - Parque Guandu, Japeri - RJ",
+            "precoMinimo": 50,
+            "destaque": true,
+
+            "imagem": "https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=900&q=85",
+
+            "categorias": [
+                "Cabelo",
+                "Sobrancelhas",
+                "Unhas"
+            ],
+
+            "servicos": [
+                1,
+                3,
+                11
+            ],
+
+            "profissionais": [
+                1,
+                7
+            ],
+
+            "horarios": [
+                "09:00",
+                "10:00",
+                "11:00",
+                "13:00",
+                "14:00",
+                "15:00",
+                "16:00",
+                "17:00"
+            ]
+        },
+
+
+        {
+            "id": 6,
+            "nome": "Spa Harmonia",
+            "tipo": "Spa e estética",
+            "nota": 4.8,
+            "avaliacoes": 156,
+            "distancia": "5,2 km",
+            "bairro": "Rio D'Ouro",
+            "endereco": "Estrada Principal, 540 - Rio D'Ouro, Japeri - RJ",
+            "precoMinimo": 90,
+            "destaque": false,
+
+            "imagem": "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=900&q=85",
+
+            "categorias": [
+                "Massagem",
+                "Estética"
+            ],
+
+            "servicos": [
+                6,
+                7
+            ],
+
+            "profissionais": [
+                3,
+                4
+            ],
+
+            "horarios": [
+                "09:00",
+                "10:00",
+                "11:00",
+                "13:00",
+                "14:00",
+                "15:00",
+                "16:00"
+            ]
+        }
+
+    ],
+
+
+    "servicos": [
+
+        {
+            "id": 1,
+            "nome": "Corte feminino",
+            "categoria": "Cabelo",
+            "descricao": "Corte personalizado",
+            "preco": 55,
+            "duracao": "50 min",
+            "imagem": "https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=700&q=80"
+        },
+
+        {
+            "id": 2,
+            "nome": "Escova",
+            "categoria": "Cabelo",
+            "descricao": "Escova modelada",
+            "preco": 45,
+            "duracao": "40 min",
+            "imagem": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=700&q=80"
+        },
+
+        {
+            "id": 3,
+            "nome": "Design de sobrancelhas",
+            "categoria": "Sobrancelhas",
+            "descricao": "Design personalizado",
+            "preco": 35,
+            "duracao": "30 min",
+            "imagem": "https://images.unsplash.com/photo-1583001931096-959e9a1a6223?auto=format&fit=crop&w=700&q=80"
+        },
+
+        {
+            "id": 4,
+            "nome": "Coloração",
+            "categoria": "Cabelo",
+            "descricao": "Coloração profissional",
+            "preco": 120,
+            "duracao": "90 min",
+            "imagem": "https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=700&q=80"
+        },
+
+        {
+            "id": 5,
+            "nome": "Limpeza de pele",
+            "categoria": "Estética",
+            "descricao": "Limpeza facial completa",
+            "preco": 90,
+            "duracao": "60 min",
+            "imagem": "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=700&q=80"
+        },
+
+        {
+            "id": 6,
+            "nome": "Massagem relaxante",
+            "categoria": "Massagem",
+            "descricao": "Massagem corporal relaxante",
+            "preco": 110,
+            "duracao": "60 min",
+            "imagem": "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=700&q=80"
+        },
+
+        {
+            "id": 7,
+            "nome": "Drenagem corporal",
+            "categoria": "Estética",
+            "descricao": "Drenagem linfática",
+            "preco": 100,
+            "duracao": "60 min",
+            "imagem": "https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&w=700&q=80"
+        },
+
+        {
+            "id": 8,
+            "nome": "Corte masculino",
+            "categoria": "Barbearia",
+            "descricao": "Corte masculino tradicional",
+            "preco": 35,
+            "duracao": "40 min",
+            "imagem": "https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=700&q=80"
+        },
+
+        {
+            "id": 9,
+            "nome": "Barba",
+            "categoria": "Barbearia",
+            "descricao": "Modelagem e acabamento",
+            "preco": 30,
+            "duracao": "30 min",
+            "imagem": "https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=700&q=80"
+        },
+
+        {
+            "id": 10,
+            "nome": "Corte + barba",
+            "categoria": "Barbearia",
+            "descricao": "Combo completo",
+            "preco": 60,
+            "duracao": "70 min",
+            "imagem": "https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=700&q=80"
+        },
+
+        {
+            "id": 11,
+            "nome": "Manicure",
+            "categoria": "Unhas",
+            "descricao": "Manicure tradicional",
+            "preco": 35,
+            "duracao": "40 min",
+            "imagem": "https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=700&q=80"
+        },
+
+        {
+            "id": 12,
+            "nome": "Pedicure",
+            "categoria": "Unhas",
+            "descricao": "Pedicure tradicional",
+            "preco": 40,
+            "duracao": "45 min",
+            "imagem": "https://images.unsplash.com/photo-1519014816548-bf5fe059798b?auto=format&fit=crop&w=700&q=80"
+        },
+
+        {
+            "id": 13,
+            "nome": "Alongamento de unhas",
+            "categoria": "Unhas",
+            "descricao": "Alongamento profissional",
+            "preco": 100,
+            "duracao": "120 min",
+            "imagem": "https://images.unsplash.com/photo-1610992015732-2449b76344bc?auto=format&fit=crop&w=700&q=80"
+        }
+
+    ],
+
+
+    "profissionais": [
+
+        {
+            "id": 1,
+            "nome": "Marina Alves",
+            "especialidade": "Especialista em cabelos",
+            "nota": 4.9,
+            "imagem": "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=600&q=80"
+        },
+
+        {
+            "id": 2,
+            "nome": "Camila Souza",
+            "especialidade": "Hair stylist",
+            "nota": 4.8,
+            "imagem": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80"
+        },
+
+        {
+            "id": 3,
+            "nome": "Juliana Martins",
+            "especialidade": "Esteticista",
+            "nota": 4.9,
+            "imagem": "https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&w=600&q=80"
+        },
+
+        {
+            "id": 4,
+            "nome": "Beatriz Lima",
+            "especialidade": "Especialista em estética",
+            "nota": 4.8,
+            "imagem": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=600&q=80"
+        },
+
+        {
+            "id": 5,
+            "nome": "Rafael Costa",
+            "especialidade": "Barbeiro profissional",
+            "nota": 4.9,
+            "imagem": "https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=600&q=80"
+        },
+
+        {
+            "id": 6,
+            "nome": "Lucas Mendes",
+            "especialidade": "Barbeiro e visagista",
+            "nota": 4.8,
+            "imagem": "https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=600&q=80"
+        },
+
+        {
+            "id": 7,
+            "nome": "Amanda Rocha",
+            "especialidade": "Nail designer",
+            "nota": 4.9,
+            "imagem": "https://images.unsplash.com/photo-1595951013882-8c0d0c2f1c6d?auto=format&fit=crop&w=600&q=80"
+        }
+
+    ]
+}

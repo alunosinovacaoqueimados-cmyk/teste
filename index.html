@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BeautyGo | Serviços de Beleza</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header-content">
+
+            <a href="#" class="logo">
+                <span class="logo-symbol">B</span>
+                <span>Beauty<span>Go</span></span>
+            </a>
+
+            <div class="location">
+                <span class="location-icon">⌖</span>
+                <div>
+                    <small>Atender em</small>
+                    <strong>Japeri, RJ</strong>
+                </div>
+            </div>
+
+            <div class="header-search">
+                <span>⌕</span>
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Buscar salão, serviço ou especialista..."
+                >
+            </div>
+
+            <button class="header-button" onclick="openAppointments()">
+                Meus agendamentos
+            </button>
+
+            <button class="profile-button" onclick="openProfile()">
+                <span>◯</span>
+            </button>
+
+        </div>
+    </header>
+
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-content">
+
+            <div class="hero-text">
+                <span class="hero-tag">BELEZA DO SEU JEITO</span>
+
+                <h1>
+                    Seu próximo momento
+                    <strong>começa aqui.</strong>
+                </h1>
+
+                <p>
+                    Encontre salões, clínicas e studios de beleza,
+                    compare serviços e agende seu horário em poucos cliques.
+                </p>
+
+                <div class="hero-search">
+                    <span>⌕</span>
+                    <input
+                        type="text"
+                        id="heroSearch"
+                        placeholder="O que você procura?"
+                    >
+                    <button onclick="performSearch()">Buscar</button>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <img
+                    src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1000&q=85"
+                    alt="Salão de beleza"
+                >
+
+                <div class="hero-card">
+                    <div class="hero-card-icon">✓</div>
+                    <div>
+                        <strong>Agendamento fácil</strong>
+                        <small>Escolha o melhor horário para você</small>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- CATEGORIAS -->
+    <section class="container categories-section">
+
+        <div class="section-heading">
+            <div>
+                <span class="section-label">EXPLORE</span>
+                <h2>O que você procura?</h2>
+            </div>
+
+            <button class="view-all" onclick="showAllCategories()">
+                Ver todas
+            </button>
+        </div>
+
+        <div class="categories" id="categoriesContainer"></div>
+
+    </section>
+
+
+    <!-- DESTAQUES -->
+    <section class="container">
+
+        <div class="section-heading">
+            <div>
+                <span class="section-label">PERTO DE VOCÊ</span>
+                <h2>Estabelecimentos em destaque</h2>
+            </div>
+
+            <button class="view-all" onclick="showAllEstablishments()">
+                Ver todos
+            </button>
+        </div>
+
+        <div class="establishments" id="establishmentsContainer"></div>
+
+    </section>
+
+
+    <!-- SERVIÇOS POPULARES -->
+    <section class="container services-section">
+
+        <div class="section-heading">
+            <div>
+                <span class="section-label">MAIS PROCURADOS</span>
+                <h2>Serviços populares</h2>
+            </div>
+        </div>
+
+        <div class="services-grid" id="servicesContainer"></div>
+
+    </section>
+
+
+    <!-- PROFISSIONAIS -->
+    <section class="professionals-section">
+
+        <div class="container">
+
+            <div class="section-heading light-heading">
+                <div>
+                    <span class="section-label">ESPECIALISTAS</span>
+                    <h2>Profissionais em destaque</h2>
+                </div>
+            </div>
+
+            <div class="professionals" id="professionalsContainer"></div>
+
+        </div>
+
+    </section>
+
+
+    <!-- COMO FUNCIONA -->
+    <section class="container how-section">
+
+        <div class="section-heading centered">
+            <div>
+                <span class="section-label">SIMPLES E RÁPIDO</span>
+                <h2>Como funciona?</h2>
+            </div>
+        </div>
+
+        <div class="steps">
+
+            <div class="step">
+                <span class="step-number">01</span>
+                <div class="step-icon">⌕</div>
+                <h3>Encontre</h3>
+                <p>
+                    Pesquise salões, clínicas, studios e profissionais.
+                </p>
+            </div>
+
+            <div class="step">
+                <span class="step-number">02</span>
+                <div class="step-icon">▣</div>
+                <h3>Escolha</h3>
+                <p>
+                    Veja serviços, preços, avaliações e horários.
+                </p>
+            </div>
+
+            <div class="step">
+                <span class="step-number">03</span>
+                <div class="step-icon">✓</div>
+                <h3>Agende</h3>
+                <p>
+                    Escolha o melhor dia e horário para seu atendimento.
+                </p>
+            </div>
+
+            <div class="step">
+                <span class="step-number">04</span>
+                <div class="step-icon">★</div>
+                <h3>Aproveite</h3>
+                <p>
+                    Vá ao estabelecimento e aproveite sua experiência.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CTA PARA ESTABELECIMENTOS -->
+    <section class="business-cta">
+
+        <div class="container business-content">
+
+            <div>
+                <span class="section-label">PARA EMPREENDEDORES</span>
+
+                <h2>
+                    Seu negócio de beleza
+                    merece ser encontrado.
+                </h2>
+
+                <p>
+                    Cadastre seu salão, clínica ou studio no BeautyGo
+                    e permita que novos clientes encontrem e agendem
+                    seus serviços.
+                </p>
+
+                <button onclick="openBusinessModal()">
+                    Quero cadastrar meu negócio
+                </button>
+            </div>
+
+            <div class="business-image">
+                <img
+                    src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=900&q=85"
+                    alt="Profissional de beleza"
+                >
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="container footer-content">
+
+            <div class="footer-brand">
+                <a href="#" class="logo footer-logo">
+                    <span class="logo-symbol">B</span>
+                    <span>Beauty<span>Go</span></span>
+                </a>
+
+                <p>
+                    Beleza, cuidado e praticidade
+                    em um só lugar.
+                </p>
+            </div>
+
+            <div class="footer-column">
+                <h4>BeautyGo</h4>
+                <a href="#">Sobre nós</a>
+                <a href="#">Como funciona</a>
+                <a href="#">Carreiras</a>
+                <a href="#">Contato</a>
+            </div>
+
+            <div class="footer-column">
+                <h4>Para clientes</h4>
+                <a href="#">Encontrar serviços</a>
+                <a href="#">Meus agendamentos</a>
+                <a href="#">Favoritos</a>
+                <a href="#">Ajuda</a>
+            </div>
+
+            <div class="footer-column">
+                <h4>Para negócios</h4>
+                <a href="#">Cadastrar negócio</a>
+                <a href="#">Painel do parceiro</a>
+                <a href="#">Soluções</a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            © 2026 BeautyGo. Projeto demonstrativo.
+        </div>
+
+    </footer>
+
+
+    <!-- MODAL DE ESTABELECIMENTO -->
+    <div class="modal-overlay" id="establishmentModal">
+
+        <div class="modal establishment-modal">
+
+            <button class="close-modal" onclick="closeModal('establishmentModal')">
+                ×
+            </button>
+
+            <div id="establishmentDetails"></div>
+
+        </div>
+
+    </div>
+
+
+    <!-- MODAL DE AGENDAMENTO -->
+    <div class="modal-overlay" id="bookingModal">
+
+        <div class="modal booking-modal">
+
+            <button class="close-modal" onclick="closeModal('bookingModal')">
+                ×
+            </button>
+
+            <div id="bookingContent"></div>
+
+        </div>
+
+    </div>
+
+
+    <!-- MODAL DE AGENDAMENTOS -->
+    <div class="modal-overlay" id="appointmentsModal">
+
+        <div class="modal">
+
+            <button class="close-modal" onclick="closeModal('appointmentsModal')">
+                ×
+            </button>
+
+            <h2>Meus agendamentos</h2>
+
+            <div id="appointmentsList"></div>
+
+        </div>
+
+    </div>
+
+
+    <!-- MODAL PERFIL -->
+    <div class="modal-overlay" id="profileModal">
+
+        <div class="modal">
+
+            <button class="close-modal" onclick="closeModal('profileModal')">
+                ×
+            </button>
+
+            <div class="profile-modal">
+
+                <div class="profile-avatar">U</div>
+
+                <h2>Meu perfil</h2>
+
+                <p>Entre para acompanhar seus agendamentos.</p>
+
+                <input type="text" placeholder="Seu nome">
+
+                <input type="email" placeholder="Seu e-mail">
+
+                <button class="primary-button">
+                    Continuar
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- MODAL PARA EMPRESAS -->
+    <div class="modal-overlay" id="businessModal">
+
+        <div class="modal">
+
+            <button class="close-modal" onclick="closeModal('businessModal')">
+                ×
+            </button>
+
+            <h2>Cadastre seu negócio</h2>
+
+            <p class="modal-description">
+                Faça parte do BeautyGo e permita que clientes
+                encontrem seus serviços.
+            </p>
+
+            <form onsubmit="submitBusiness(event)">
+
+                <label>Nome do estabelecimento</label>
+                <input type="text" required placeholder="Ex.: Studio Bella">
+
+                <label>Tipo de negócio</label>
+
+                <select required>
+                    <option value="">Selecione</option>
+                    <option>Salão de beleza</option>
+                    <option>Clínica de estética</option>
+                    <option>Studio de beleza</option>
+                    <option>Barbearia</option>
+                    <option>Manicure / Nail Designer</option>
+                </select>
+
+                <label>Telefone</label>
+                <input type="tel" required placeholder="(21) 99999-9999">
+
+                <label>Endereço</label>
+                <input type="text" required placeholder="Rua, número e bairro">
+
+                <button class="primary-button" type="submit">
+                    Enviar cadastro
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <!-- TOAST -->
+    <div class="toast" id="toast"></div>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
